@@ -1,38 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background: #ceb6b6;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left-container {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left-container .top-box {
+  height: 15vh;
+  background: #7d4949;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-container .middle-box {
+  height: 85vh;
+  background: #716868;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left-container .middle-box input[type="text"] {
+  width: 300px;
+  height: 30px;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-container .middle-box textarea {
+}
+
+.left-container .middle-box input[type="submit"] {
+  align-self: center;
+}
+
+.right-container {
+  height: 100vh;
+}
+
+.right-container {
+}
+
+.wods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wodBox {
+  width: 250px;
+  height: 200px;
+  background-color: rgb(143, 136, 136);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.wodBox:hover {
+  transition: all 0.3s ease-in-out;
+  background: rgb(139, 74, 74);
+  cursor: pointer;
+}
+
+.popModal {
+  transition: all 0.5s ease-in-out;
+  width: 100px;
+  height: 200px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.wodBox button {
+  all: unset;
+  position: absolute;
+  top: 0px;
+  right: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.wodBox h2 {
+  font-size: 1.2rem;
+}
+.wodBox h3 {
+  font-size: 1.2rem;
+}
+.wodBox p {
+  font-size: 1rem;
 }
